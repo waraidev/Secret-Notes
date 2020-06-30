@@ -1,12 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "lvLm373q2lECixnmqQUiPDf802Ayp6Zqdc14EP/3lBTavcZZw1PnMJ9ue86d9IEhDxX2xrvpQ1sG4GtxBKxbxA==",
+  "dgSpecHash": "4itF0C8iWzACXzaF+PgBm3LMh1KRzT0F7+KAVA29CQdyjnlndGJKNHqq9BpwBNQv/V96WS86MkIEvYYtpp4p6Q==",
   "success": true,
   "projectFilePath": "/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/SecretNotes.iOS.csproj",
   "expectedPackageFiles": [
-    "/Users/wileye/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/Users/wileye/.nuget/packages/xamarin.essentials/1.3.1/xamarin.essentials.1.3.1.nupkg.sha512",
-    "/Users/wileye/.nuget/packages/xamarin.forms/4.5.0.495/xamarin.forms.4.5.0.495.nupkg.sha512"
+    "/Users/wileye/.nuget/packages/firebasedatabase.net/4.0.4/firebasedatabase.net.4.0.4.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/litedb/4.1.4/litedb.4.1.4.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/system.reactive/4.0.0/system.reactive.4.0.0.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/system.reflection/4.3.0/system.reflection.4.3.0.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/system.reflection.typeextensions/4.3.0/system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/system.runtime.interopservices.windowsruntime/4.3.0/system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/xamarin.forms/4.7.0.968/xamarin.forms.4.7.0.968.nupkg.sha512"
   ],
   "logs": []
 }

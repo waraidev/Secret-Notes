@@ -2,44 +2,41 @@
 using System.IO;
 using Xamarin.Forms;
 using SecretNotes.Models;
+using SecretNotes.ViewModels;
+using System.Threading.Tasks;
 
 namespace SecretNotes.Views
 {
     public partial class NoteEntryPage : ContentPage
     {
+        readonly NoteViewModel noteVM;
+        Note selectedNote;
+
         public NoteEntryPage()
         {
+            noteVM = new NoteViewModel();
             InitializeComponent();
         }
 
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            var note = (Note)BindingContext;
+            selectedNote = (Note)BindingContext;
 
-            if (string.IsNullOrWhiteSpace(note.Filename))
-            {
-                // Save
-                var filename = Path.Combine(App.FolderPath, $"{Path.GetRandomFileName()}.notes.txt");
-                File.WriteAllText(filename, note.Text);
-            }
-            else
-            {
-                // Update 
-                File.WriteAllText(note.Filename, note.Text);
-            }
+            await noteVM.UpdateNote(
+                selectedNote.NoteID,
+                selectedNote.Text,
+                selectedNote.Date);
+            
 
             await Navigation.PopAsync();
         }
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
-            var note = (Note)BindingContext;
+            selectedNote = (Note)BindingContext;
 
-            if (File.Exists(note.Filename))
-            {
-                File.Delete(note.Filename);
-            }
-
+            await noteVM.DeleteNote(selectedNote.NoteID);
+            
             await Navigation.PopAsync();
         }
     }

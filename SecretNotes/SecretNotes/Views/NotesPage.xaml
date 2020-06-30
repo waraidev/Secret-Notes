@@ -13,7 +13,14 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Text}"
-                          Detail="{Binding Date}" />
+                          Detail="{Binding Date}">
+                    <TextCell.ContextActions>
+                        <MenuItem Clicked="OnDeleteClicked"
+                                  IsDestructive='True'
+                                  CommandParameter="{Binding .}"
+                                  Text="Delete"/>
+                    </TextCell.ContextActions>
+                </TextCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

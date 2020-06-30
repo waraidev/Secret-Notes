@@ -1,23 +1,28 @@
 ﻿<Properties StartupConfiguration="{DD40D94D-FFF5-45DB-91F5-CD9947AD8CC5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes/ViewModels/NoteViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes.iOS/Main.cs">
     <Files>
-      <File FileName="SecretNotes/Views/NotesPage.xaml" Line="4" Column="40" />
-      <File FileName="SecretNotes/Views/NotesPage.xaml.cs" Line="19" Column="32" />
-      <File FileName="SecretNotes/Views/NoteEntryPage.xaml" Line="6" Column="30" />
-      <File FileName="SecretNotes/Views/NoteEntryPage.xaml.cs" Line="8" Column="38" />
-      <File FileName="SecretNotes/App.xaml" Line="4" Column="29" />
-      <File FileName="SecretNotes/App.xaml.cs" Line="4" Column="25" />
-      <File FileName="SecretNotes/Models/Note.cs" Line="7" Column="9" />
-      <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" Line="11" Column="1" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml" Line="11" Column="46" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml.cs" Line="59" Column="39" />
+      <File FileName="SecretNotes/Views/NoteEntryPage.xaml" Line="9" Column="36" />
+      <File FileName="SecretNotes/Views/NoteEntryPage.xaml.cs" Line="36" Column="13" />
+      <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" Line="29" Column="33" />
+      <File FileName="SecretNotes.iOS/Main.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SecretNotes" expanded="True">
             <Node name="SecretNotes" expanded="True">
-              <Node name="ViewModels" expanded="True">
-                <Node name="NoteViewModel.cs" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="NoteEntryPage.xaml" expanded="True" />
+                <Node name="NotesPage.xaml" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="SecretNotes.iOS" expanded="True">
+              <Node name="Main.cs" selected="True" />
             </Node>
           </Node>
         </State>

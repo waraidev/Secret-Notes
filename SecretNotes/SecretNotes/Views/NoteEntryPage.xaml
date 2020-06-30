@@ -6,7 +6,7 @@
     <StackLayout Margin="20">
         <Editor Placeholder="Enter your note"
                 Text="{Binding Text}"
-                HeightRequest="100" />
+                HeightRequest="100"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />

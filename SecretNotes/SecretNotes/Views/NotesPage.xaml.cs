@@ -4,43 +4,35 @@ using System.IO;
 using System.Linq;
 using Xamarin.Forms;
 using SecretNotes.Models;
+using SecretNotes.ViewModels;
+using System.Threading.Tasks;
 
 namespace SecretNotes.Views
 {
     public partial class NotesPage : ContentPage
     {
+        readonly NoteViewModel noteVM;
+
         public NotesPage()
         {
+            noteVM = new NoteViewModel();
             InitializeComponent();
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
 
-            var notes = new List<Note>();
-
-            var files = Directory.EnumerateFiles(App.FolderPath, "*.notes.txt");
-            foreach (var filename in files)
-            {
-                notes.Add(new Note
-                {
-                    Filename = filename,
-                    Text = File.ReadAllText(filename),
-                    Date = File.GetCreationTime(filename)
-                });
-            }
-
-            listView.ItemsSource = notes
-                .OrderBy(d => d.Date)
-                .ToList();
+            await FetchNotes();
         }
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
         {
+            var note = await noteVM.AddNote("", DateTime.Now);
+
             await Navigation.PushAsync(new NoteEntryPage
             {
-                BindingContext = new Note()
+                BindingContext = note
             });
         }
 
@@ -53,6 +45,25 @@ namespace SecretNotes.Views
                     BindingContext = e.SelectedItem as Note
                 });
             }
+        }
+
+        async void OnDeleteClicked(object sender, EventArgs e)
+        {
+            var item = (MenuItem)sender;
+            await DisplayAlert("Delete Context Action", item.CommandParameter + " delete context action", "OK");
+
+            var note = item.BindingContext as Note;
+            await noteVM.DeleteNote(note.NoteID);
+            await FetchNotes();
+        }
+
+        private async Task FetchNotes()
+        {
+            var allNotes = await noteVM.GetAllNotes();
+
+            listView.ItemsSource = allNotes
+                .OrderBy(d => d.Date)
+                .ToList();
         }
     }
 }

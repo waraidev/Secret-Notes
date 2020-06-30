@@ -36,18 +36,19 @@ int dimen notification_small_icon_size_as_large 0x7f070013
 int dimen notification_subtext_size 0x7f070014
 int dimen notification_top_pad 0x7f070015
 int dimen notification_top_pad_large_text 0x7f070016
-int drawable notification_action_background 0x7f080001
-int drawable notification_bg 0x7f080002
-int drawable notification_bg_low 0x7f080003
-int drawable notification_bg_low_normal 0x7f080004
-int drawable notification_bg_low_pressed 0x7f080005
-int drawable notification_bg_normal 0x7f080006
-int drawable notification_bg_normal_pressed 0x7f080007
-int drawable notification_icon_background 0x7f080008
-int drawable notification_template_icon_bg 0x7f080009
-int drawable notification_template_icon_low_bg 0x7f08000a
-int drawable notification_tile_bg 0x7f08000b
-int drawable notify_panel_notification_icon_bg 0x7f08000c
+int drawable abc_vector_test 0x7f080001
+int drawable notification_action_background 0x7f080002
+int drawable notification_bg 0x7f080003
+int drawable notification_bg_low 0x7f080004
+int drawable notification_bg_low_normal 0x7f080005
+int drawable notification_bg_low_pressed 0x7f080006
+int drawable notification_bg_normal 0x7f080007
+int drawable notification_bg_normal_pressed 0x7f080008
+int drawable notification_icon_background 0x7f080009
+int drawable notification_template_icon_bg 0x7f08000a
+int drawable notification_template_icon_low_bg 0x7f08000b
+int drawable notification_tile_bg 0x7f08000c
+int drawable notify_panel_notification_icon_bg 0x7f08000d
 int id accessibility_action_clickable_span 0x7f0b0001
 int id accessibility_custom_action_0 0x7f0b0002
 int id accessibility_custom_action_1 0x7f0b0003
@@ -131,6 +132,21 @@ int style TextAppearance_Compat_Notification_Time 0x7f150004
 int style TextAppearance_Compat_Notification_Title 0x7f150005
 int style Widget_Compat_NotificationActionContainer 0x7f150006
 int style Widget_Compat_NotificationActionText 0x7f150007
+int[] styleable AnimatedStateListDrawableCompat { 0x1010196, 0x101011c, 0x101030c, 0x101030d, 0x1010195, 0x1010194 }
+int styleable AnimatedStateListDrawableCompat_android_constantSize 0
+int styleable AnimatedStateListDrawableCompat_android_dither 1
+int styleable AnimatedStateListDrawableCompat_android_enterFadeDuration 2
+int styleable AnimatedStateListDrawableCompat_android_exitFadeDuration 3
+int styleable AnimatedStateListDrawableCompat_android_variablePadding 4
+int styleable AnimatedStateListDrawableCompat_android_visible 5
+int[] styleable AnimatedStateListDrawableItem { 0x1010199, 0x10100d0 }
+int styleable AnimatedStateListDrawableItem_android_drawable 0
+int styleable AnimatedStateListDrawableItem_android_id 1
+int[] styleable AnimatedStateListDrawableTransition { 0x1010199, 0x101044a, 0x101044b, 0x1010449 }
+int styleable AnimatedStateListDrawableTransition_android_drawable 0
+int styleable AnimatedStateListDrawableTransition_android_fromId 1
+int styleable AnimatedStateListDrawableTransition_android_reversible 2
+int styleable AnimatedStateListDrawableTransition_android_toId 3
 int[] styleable ColorStateListItem { 0x7f040001, 0x101031f, 0x10101a5 }
 int styleable ColorStateListItem_alpha 0
 int styleable ColorStateListItem_android_alpha 1
@@ -169,3 +185,12 @@ int styleable GradientColor_android_type 11
 int[] styleable GradientColorItem { 0x10101a5, 0x1010514 }
 int styleable GradientColorItem_android_color 0
 int styleable GradientColorItem_android_offset 1
+int[] styleable StateListDrawable { 0x1010196, 0x101011c, 0x101030c, 0x101030d, 0x1010195, 0x1010194 }
+int styleable StateListDrawable_android_constantSize 0
+int styleable StateListDrawable_android_dither 1
+int styleable StateListDrawable_android_enterFadeDuration 2
+int styleable StateListDrawable_android_exitFadeDuration 3
+int styleable StateListDrawable_android_variablePadding 4
+int styleable StateListDrawable_android_visible 5
+int[] styleable StateListDrawableItem { 0x1010199 }
+int styleable StateListDrawableItem_android_drawable 0
