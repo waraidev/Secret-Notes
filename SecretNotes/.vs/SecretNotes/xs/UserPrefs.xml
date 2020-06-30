@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{DD40D94D-FFF5-45DB-91F5-CD9947AD8CC5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes/ViewModels/NoteViewModel.cs">
+    <Files>
+      <File FileName="SecretNotes/Views/NotesPage.xaml" Line="4" Column="40" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml.cs" Line="19" Column="32" />
+      <File FileName="SecretNotes/Views/NoteEntryPage.xaml" Line="6" Column="30" />
+      <File FileName="SecretNotes/Views/NoteEntryPage.xaml.cs" Line="8" Column="38" />
+      <File FileName="SecretNotes/App.xaml" Line="4" Column="29" />
+      <File FileName="SecretNotes/App.xaml.cs" Line="4" Column="25" />
+      <File FileName="SecretNotes/Models/Note.cs" Line="7" Column="9" />
+      <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" Line="11" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SecretNotes" expanded="True">
+            <Node name="SecretNotes" expanded="True">
+              <Node name="ViewModels" expanded="True">
+                <Node name="NoteViewModel.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>dnd_secrets.Android/dnd_secrets.Android.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SecretNotes.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AF5ED2FB-F6B2-4DEE-8816-FF983C7EBDA5" />
+</Properties>

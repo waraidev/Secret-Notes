@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{DD40D94D-FFF5-45DB-91F5-CD9947AD8CC5}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SecretNotes.iOS" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SecretNotes.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AF5ED2FB-F6B2-4DEE-8816-FF983C7EBDA5" />
+</Properties>
