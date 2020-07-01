@@ -23,7 +23,9 @@ namespace SecretNotes.Views
         {
             base.OnAppearing();
 
+            loading.IsRunning = true;
             await FetchNotes();
+            loading.IsRunning = false;
         }
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
@@ -53,8 +55,13 @@ namespace SecretNotes.Views
             await DisplayAlert("Delete Context Action", item.CommandParameter + " delete context action", "OK");
 
             var note = item.BindingContext as Note;
+
+            loading.IsRunning = true;
+
             await noteVM.DeleteNote(note.NoteID);
             await FetchNotes();
+
+            loading.IsRunning = false;
         }
 
         private async Task FetchNotes()

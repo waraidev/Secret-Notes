@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{DD40D94D-FFF5-45DB-91F5-CD9947AD8CC5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes/Views/NotesPage.xaml">
     <Files>
-      <File FileName="SecretNotes/Views/NotesPage.xaml" Line="11" Column="46" />
-      <File FileName="SecretNotes/Views/NotesPage.xaml.cs" Line="59" Column="39" />
-      <File FileName="SecretNotes/Views/NoteEntryPage.xaml" Line="9" Column="36" />
-      <File FileName="SecretNotes/Views/NoteEntryPage.xaml.cs" Line="36" Column="13" />
-      <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" Line="29" Column="33" />
-      <File FileName="SecretNotes.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml" Line="30" Column="10" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml.cs" />
+      <File FileName="SecretNotes/Views/NoteEntryPage.xaml" />
+      <File FileName="SecretNotes/Views/NoteEntryPage.xaml.cs" />
+      <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" />
+      <File FileName="SecretNotes.iOS/AppDelegate.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,9 +21,7 @@
               </Node>
               <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="SecretNotes.iOS" expanded="True">
-              <Node name="Main.cs" selected="True" />
-            </Node>
+            <Node name="SecretNotes.iOS" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
