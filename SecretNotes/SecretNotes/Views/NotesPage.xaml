@@ -29,6 +29,4 @@
         </StackLayout>
         <ActivityIndicator x:Name="loading" AbsoluteLayout.LayoutBounds=".5,.5,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
     </AbsoluteLayout>
-    
-    
 </ContentPage>

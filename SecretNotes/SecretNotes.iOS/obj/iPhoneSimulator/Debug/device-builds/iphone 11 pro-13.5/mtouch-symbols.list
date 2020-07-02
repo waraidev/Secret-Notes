@@ -567,6 +567,9 @@ _BrotliEncoderCompressStream
 _BrotliEncoderHasMoreOutput
 _BrotliEncoderDestroyInstance
 _BrotliEncoderCompress
+_OBJC_CLASS_$_FIRApp
+_OBJC_CLASS_$_FIRConfiguration
+_OBJC_CLASS_$_FIROptions
 _mono_pmip
 _xamarin_dyn_objc_msgSend
 _xamarin_dyn_objc_msgSendSuper

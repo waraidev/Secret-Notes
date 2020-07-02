@@ -1140,6 +1140,12 @@ Function=BrotliEncoderDestroyInstance
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
 Function=BrotliEncoderCompress
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRApp
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRConfiguration
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROptions
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Core.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper

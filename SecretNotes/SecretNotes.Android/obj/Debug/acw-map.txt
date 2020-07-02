@@ -1,3 +1,6 @@
+com.xamarin.sample.splashscreen.SplashActivity, SecretNotes.Android;crc64071a974556fd8dbe.SplashActivity
+com.xamarin.sample.splashscreen.SplashActivity;crc64071a974556fd8dbe.SplashActivity
+com.xamarin.sample.splashscreen.SplashActivity;crc64071a974556fd8dbe.SplashActivity
 SecretNotes.Droid.MainActivity, SecretNotes.Android;crc649e7de9801d9a0d24.MainActivity
 SecretNotes.Droid.MainActivity;crc649e7de9801d9a0d24.MainActivity
 secretnotes.droid.MainActivity;crc649e7de9801d9a0d24.MainActivity

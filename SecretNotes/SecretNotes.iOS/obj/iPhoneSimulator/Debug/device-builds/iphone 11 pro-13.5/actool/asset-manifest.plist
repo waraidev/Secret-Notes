@@ -27,6 +27,47 @@
 			<string>/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/actool/partial-info.plist</string>
 		</array>
 	</dict>
+	<key>com.apple.actool.document.warnings</key>
+	<array>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./LaunchScreen.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "LaunchScreen" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./LaunchScreen.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./LaunchScreen.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "LaunchScreen" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+	</array>
 	<key>com.apple.actool.notices</key>
 	<array>
 		<dict>

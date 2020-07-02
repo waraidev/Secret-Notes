@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SecretNotes.Views.LoginPage">
+    <StackLayout
+        VerticalOptions="Center"
+        Margin="20">
+        
+        <Label
+            Text="FireAuth"
+            HorizontalOptions="Center"
+            TextColor="#4682B4"
+            FontSize="35"
+            Margin="0, 20"
+            />
+        
+        <Entry
+            Placeholder="E-mail"
+            Keyboard="Email"
+            x:Name="EmailInput"
+            />
+        
+        <Entry
+            Placeholder="Password"
+            IsPassword="true"
+            x:Name="PasswordInput"
+            />
+        
+        <Button
+            Text="Enter"
+            Clicked="LoginClicked"
+            Margin="60, 40"
+            BackgroundColor="#4682B4"
+            TextColor="White"
+            />
+        
+    </StackLayout>
+</ContentPage>

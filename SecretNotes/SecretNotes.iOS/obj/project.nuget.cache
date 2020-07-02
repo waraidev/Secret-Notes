@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4itF0C8iWzACXzaF+PgBm3LMh1KRzT0F7+KAVA29CQdyjnlndGJKNHqq9BpwBNQv/V96WS86MkIEvYYtpp4p6Q==",
+  "dgSpecHash": "t25ZujDS/g1l3ROVSo6xvJtn9125fCPTNiHeKS6CFMzlzxtkTPoCFdTZhlroJlLziFpDEncP0WQxgaFdBK1Zcg==",
   "success": true,
   "projectFilePath": "/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/SecretNotes.iOS.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,10 @@
     "/Users/wileye/.nuget/packages/system.reflection/4.3.0/system.reflection.4.3.0.nupkg.sha512",
     "/Users/wileye/.nuget/packages/system.reflection.typeextensions/4.3.0/system.reflection.typeextensions.4.3.0.nupkg.sha512",
     "/Users/wileye/.nuget/packages/system.runtime.interopservices.windowsruntime/4.3.0/system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/xamarin.build.download/0.10.0/xamarin.build.download.0.10.0.nupkg.sha512",
     "/Users/wileye/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/xamarin.firebase.ios.auth/6.5.1/xamarin.firebase.ios.auth.6.5.1.nupkg.sha512",
+    "/Users/wileye/.nuget/packages/xamarin.firebase.ios.core/6.6.6/xamarin.firebase.ios.core.6.6.6.nupkg.sha512",
     "/Users/wileye/.nuget/packages/xamarin.forms/4.7.0.968/xamarin.forms.4.7.0.968.nupkg.sha512"
   ],
   "logs": []
