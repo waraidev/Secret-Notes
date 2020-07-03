@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6yEVqNAfVZJgvc1D5GlBDpzcn26Krkhe9Icz1kSVsO8n+JmgcvzKCEeM+QblYp4FsFUG1ZZfMh6JS49qeEw2xw==",
+  "dgSpecHash": "dKuET8NQRDIvVoZWyPPwjX8XYY9TqV3Q5r0hDbJDYkO9hG4y56G3AcEgAUMG51X7E+KdXBnDGx/1Chw7KpSrlA==",
   "success": true,
   "projectFilePath": "/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes/SecretNotes.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     "/Users/wileye/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/Users/wileye/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/Users/wileye/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "/Users/wileye/.nuget/packages/xamarin.forms/4.7.0.968/xamarin.forms.4.7.0.968.nupkg.sha512"
+    "/Users/wileye/.nuget/packages/xamarin.forms/4.7.0.1080/xamarin.forms.4.7.0.1080.nupkg.sha512"
   ],
   "logs": []
 }

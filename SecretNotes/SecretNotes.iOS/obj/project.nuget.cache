@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t25ZujDS/g1l3ROVSo6xvJtn9125fCPTNiHeKS6CFMzlzxtkTPoCFdTZhlroJlLziFpDEncP0WQxgaFdBK1Zcg==",
+  "dgSpecHash": "JcHy+PVn0T+chV5qchvkeNcFHkJEOUAkXxgJQnTyhYH58FHGxDqmBsRUacuiI8pOK3werNQ7+XOwKW/sE5o+ig==",
   "success": true,
   "projectFilePath": "/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/SecretNotes.iOS.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,7 @@
     "/Users/wileye/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
     "/Users/wileye/.nuget/packages/xamarin.firebase.ios.auth/6.5.1/xamarin.firebase.ios.auth.6.5.1.nupkg.sha512",
     "/Users/wileye/.nuget/packages/xamarin.firebase.ios.core/6.6.6/xamarin.firebase.ios.core.6.6.6.nupkg.sha512",
-    "/Users/wileye/.nuget/packages/xamarin.forms/4.7.0.968/xamarin.forms.4.7.0.968.nupkg.sha512"
+    "/Users/wileye/.nuget/packages/xamarin.forms/4.7.0.1080/xamarin.forms.4.7.0.1080.nupkg.sha512"
   ],
   "logs": []
 }

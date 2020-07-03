@@ -12,6 +12,7 @@ namespace SecretNotes.Views
     public partial class NotesPage : ContentPage
     {
         readonly NoteViewModel noteVM;
+        IAuth auth;
 
         public NotesPage()
         {
@@ -71,6 +72,13 @@ namespace SecretNotes.Views
             listView.ItemsSource = allNotes
                 .OrderBy(d => d.Date)
                 .ToList();
+        }
+
+        private async void OnSignoutClicked(object sender, EventArgs e)
+        {
+            var signedOut = auth.SignOut();
+            if (signedOut)
+                await Navigation.PushAsync(new LoginPage());
         }
     }
 }

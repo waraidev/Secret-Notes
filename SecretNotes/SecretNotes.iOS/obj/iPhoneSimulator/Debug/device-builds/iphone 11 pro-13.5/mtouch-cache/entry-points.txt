@@ -65,13 +65,69 @@ Function=xamarin_log
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/mscorlib.dll
 Function=xamarin_get_locale_country_code
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetDomainSocketSizes
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.Core.dll
+Function=NetSecurityNative_ReleaseGssBuffer
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DisplayMinorStatus
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DisplayMajorStatus
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ImportUserName
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ImportPrincipalName
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ReleaseName
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitiateCredSpNego
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitiateCredWithPassword
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ReleaseCred
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitSecContext
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitSecContextEx
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_AcceptSecContext
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DeleteSecContext
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_GetUser
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_Wrap
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_Unwrap
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+Function=xamarin_start_wwan
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=BrotliDecoderCreateInstance
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompressStream
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompress
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDestroyInstance
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderIsFinished
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCreateInstance
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderSetParameter
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompressStream
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderHasMoreOutput
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderDestroyInstance
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompress
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
 Function=xamarin_find_protocol_wrapper_type
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_release_block_on_main_thread
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_start_wwan
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
 Function=xamarin_get_block_descriptor
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__NMatrix4_objc_msgSend
@@ -1084,62 +1140,112 @@ Function=xamarin_init_nsthread
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_os_log
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=NetSecurityNative_ReleaseGssBuffer
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_DisplayMinorStatus
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_DisplayMajorStatus
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_ImportUserName
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_ImportPrincipalName
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_ReleaseName
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_InitiateCredSpNego
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_InitiateCredWithPassword
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_ReleaseCred
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_InitSecContext
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_InitSecContextEx
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_AcceptSecContext
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_DeleteSecContext
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_GetUser
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_Wrap
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_Unwrap
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.dll
-Function=SystemNative_GetDomainSocketSizes
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.Core.dll
-Function=BrotliDecoderCreateInstance
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliDecoderDecompressStream
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliDecoderDecompress
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliDecoderDestroyInstance
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliDecoderIsFinished
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliEncoderCreateInstance
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliEncoderSetParameter
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliEncoderCompressStream
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliEncoderHasMoreOutput
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliEncoderDestroyInstance
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
-Function=BrotliEncoderCompress
-	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Field=FirebaseAuthVersionNum
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorDomain
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoEmailKey
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoMultiFactorResolverKey
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoNameKey
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoUpdatedCredentialKey
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthStateDidChangeNotification
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FirebaseAuthVersionStr
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuth
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRActionCodeInfo
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRActionCodeSettings
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRActionCodeURL
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAdditionalUserInfo
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthCredential
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthDataResult
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthSettings
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthTokenResult
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIREmailAuthProviderID
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIREmailPasswordAuthSignInMethod
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIREmailAuthProvider
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRFacebookAuthProviderID
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRFacebookAuthSignInMethod
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRFacebookAuthProvider
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGameCenterAuthProviderID
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGameCenterAuthSignInMethod
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGameCenterAuthProvider
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGitHubAuthProviderID
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGitHubAuthSignInMethod
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGitHubAuthProvider
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGoogleAuthProviderID
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGoogleAuthSignInMethod
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGoogleAuthProvider
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRPhoneMultiFactorID
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactor
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactorAssertion
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactorInfo
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactorResolver
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactorSession
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROAuthCredential
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROAuthProvider
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneAuthCredential
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRPhoneAuthProviderID
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRPhoneAuthSignInMethod
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneAuthProvider
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneMultiFactorAssertion
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneMultiFactorGenerator
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneMultiFactorInfo
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRTwitterAuthProviderID
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRTwitterAuthSignInMethod
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRTwitterAuthProvider
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUser
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUserMetadata
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUserProfileChangeRequest
+	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Auth.dll
 ObjectiveCClass=OBJC_CLASS_$_FIRApp
 	/Users/wileye/Documents/GitHub/Secret-Notes/SecretNotes/SecretNotes.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.5/mtouch-cache/1-Link/Firebase.Core.dll
 ObjectiveCClass=OBJC_CLASS_$_FIRConfiguration

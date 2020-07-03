@@ -1,26 +1,28 @@
 ﻿<Properties StartupConfiguration="{DD40D94D-FFF5-45DB-91F5-CD9947AD8CC5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes/Views/LoginPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes/Views/NotesPage.xaml.cs">
     <Files>
-      <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" Line="1" Column="1" />
       <File FileName="SecretNotes/Views/LoginPage.xaml" Line="5" Column="41" />
-      <File FileName="SecretNotes/Views/LoginPage.xaml.cs" />
+      <File FileName="SecretNotes/Views/LoginPage.xaml.cs" Line="28" Column="61" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml.cs" Line="77" Column="23" />
+      <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" />
+      <File FileName="SecretNotes.iOS/AuthIOS.cs" Line="32" Column="1" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml" Line="11" Column="9" />
+      <File FileName="SecretNotes/App.xaml.cs" Line="10" Column="62" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SecretNotes" expanded="True">
             <Node name="SecretNotes" expanded="True">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="LoginPage.xaml" expanded="True" selected="True" />
+                <Node name="LoginPage.xaml" expanded="True" />
+                <Node name="NotesPage.xaml" expanded="True">
+                  <Node name="NotesPage.xaml.cs" selected="True" />
+                </Node>
               </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="SecretNotes.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-                <Node name="values" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="SecretNotes.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -31,6 +33,7 @@
     <String>dnd_secrets.Android/dnd_secrets.Android.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.SecretNotes.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

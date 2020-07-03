@@ -4,29 +4,31 @@
              x:Class="SecretNotes.Views.NotesPage"
              Title="Notes">
     <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Out"
+                     Clicked="OnSignoutClicked" />
         <ToolbarItem Text="+"
                      Clicked="OnNoteAddedClicked" />
+        
     </ContentPage.ToolbarItems>
     <AbsoluteLayout>
-        <StackLayout AbsoluteLayout.LayoutBounds="0,0">
-            <ListView x:Name="listView"
-                  Margin="20"
-                  ItemSelected="OnListViewItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Text}"
-                                  Detail="{Binding Date}">
-                            <TextCell.ContextActions>
-                                <MenuItem Clicked="OnDeleteClicked"
-                                          IsDestructive='True'
-                                          CommandParameter="{Binding .}"
-                                          Text="Delete"/>
-                            </TextCell.ContextActions>
-                        </TextCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView> 
-        </StackLayout>
+        <ListView x:Name="listView"
+                Margin="20"
+                ItemSelected="OnListViewItemSelected"
+                AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Text}"
+                                Detail="{Binding Date}">
+                        <TextCell.ContextActions>
+                            <MenuItem Clicked="OnDeleteClicked"
+                                        IsDestructive='True'
+                                        CommandParameter="{Binding .}"
+                                        Text="Delete"/>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView> 
         <ActivityIndicator x:Name="loading" AbsoluteLayout.LayoutBounds=".5,.5,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
     </AbsoluteLayout>
 </ContentPage>
