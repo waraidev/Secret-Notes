@@ -12,10 +12,12 @@ namespace SecretNotes.Views
     public partial class NotesPage : ContentPage
     {
         readonly NoteViewModel noteVM;
-        IAuth auth;
+        readonly AuthViewModel auth;
 
         public NotesPage()
         {
+            auth = AuthViewModel.Instance;
+            NavigationPage.SetHasBackButton(this, false);
             noteVM = new NoteViewModel();
             InitializeComponent();
         }
@@ -78,7 +80,11 @@ namespace SecretNotes.Views
         {
             var signedOut = auth.SignOut();
             if (signedOut)
+            {
+                Application.Current.Properties.Remove("token");
                 await Navigation.PushAsync(new LoginPage());
+            }
+                
         }
     }
 }

@@ -14,6 +14,7 @@ namespace SecretNotes.Views
 
         public NoteEntryPage()
         {
+            NavigationPage.SetBackButtonTitle(this, "Notes");
             noteVM = new NoteViewModel();
             InitializeComponent();
         }

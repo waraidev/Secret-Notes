@@ -4,7 +4,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SecretNotes;
+using SecretNotes.ViewModels;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace SecretNotes.Views
@@ -12,26 +13,61 @@ namespace SecretNotes.Views
     [DesignTimeVisible(true)]
     public partial class LoginPage : ContentPage
     {
-        IAuth auth;
+        readonly AuthViewModel auth;
 
         public LoginPage()
         {
+            NavigationPage.SetHasBackButton(this, false);
+            auth = AuthViewModel.Instance;
             InitializeComponent();
-            auth = DependencyService.Get<IAuth>();
         }
 
         async void LoginClicked(object sender, EventArgs e)
         {
-            string Token = await auth.LoginWithEmailPassword(EmailInput.Text, PasswordInput.Text);
-            if (Token != "")
+            auth.GetAuthToken(EmailInput.Text, PasswordInput.Text);
+            if (auth.Token != "")
             {
-                await Navigation.PushAsync(new NotesPage());
-                //Application.Current.MainPage = new NotesPage();
+                var code = await SendSms();
+                var result = await DisplayPromptAsync("Verification Code", "Enter Below");
+
+                if (code.ToString() == result)
+                {
+                    Application.Current.Properties.Add("token", auth.Token);
+                    await Navigation.PushAsync(new NotesPage());
+                }
+                else
+                    ShowError();
             } 
             else
             {
                 ShowError();
             }
+        }
+
+        async Task<int> SendSms()
+        {
+            var randNum = RandomNumber();
+
+            try
+            {
+                var text = $"Secret Notes Verification Code: {randNum}";
+                var message = new SmsMessage(text, PhoneInput.Text);
+                await Sms.ComposeAsync(message);
+            }
+            catch
+            {
+                await DisplayAlert("Error", "Verification Code Sending Failed", "OK");
+            }
+
+            return randNum;
+        }
+
+        int RandomNumber()
+        {
+            int min = 10000;
+            int max = 99999;
+            Random rand = new Random();
+            return rand.Next(min, max);
         }
 
         async private void ShowError()

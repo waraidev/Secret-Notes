@@ -8,7 +8,7 @@
         Margin="20">
         
         <Label
-            Text="FireAuth"
+            Text="Secret Notes Sign-In"
             HorizontalOptions="Center"
             TextColor="#4682B4"
             FontSize="35"
@@ -16,10 +16,14 @@
             />
         
         <Entry
-            Placeholder="E-mail"
+            Placeholder="Email"
             Keyboard="Email"
             x:Name="EmailInput"
             />
+        <Entry
+            Placeholder="Phone Number"
+            Keyboard="Phone"
+            x:Name="PhoneInput" />
         
         <Entry
             Placeholder="Password"
