@@ -27,6 +27,13 @@ namespace SecretNotes.ViewModels
             Auth = DependencyService.Get<IAuth>();
         }
 
+        public async Task<bool> IsTokenValid(string savedToken)
+        {
+            var fireToken = await Auth.GetTokenID();
+            bool v = (savedToken == fireToken);
+            return v;
+        }
+
         public async void GetAuthToken(string email, string pass)
         {
             Email = email;
@@ -37,6 +44,13 @@ namespace SecretNotes.ViewModels
         public bool SignOut()
         {
             return Auth.SignOut();
+        }
+
+        public async Task SignUp(string email, string pass)
+        {
+            Email = email;
+            Pass = pass;
+            await Auth.SignUp(Email, Pass);
         }
     }
 }

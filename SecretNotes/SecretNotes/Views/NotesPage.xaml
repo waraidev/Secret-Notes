@@ -34,8 +34,8 @@
         <Button HorizontalOptions="Center"
                 Text="Sign Out"
                 Clicked="OnSignoutClicked"
-                BackgroundColor="Black"
-                TextColor="AliceBlue"
+                BackgroundColor="#4682B4"
+                TextColor="White"
                 WidthRequest="100"
                 AbsoluteLayout.LayoutBounds=".5,.95,100,50"
                 AbsoluteLayout.LayoutFlags="PositionProportional" />

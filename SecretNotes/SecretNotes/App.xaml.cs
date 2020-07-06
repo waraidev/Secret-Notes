@@ -3,6 +3,7 @@ using System.IO;
 using Xamarin.Forms;
 using SecretNotes.Views;
 using SecretNotes.ViewModels;
+using System.Threading.Tasks;
 
 namespace SecretNotes
 {
@@ -10,8 +11,11 @@ namespace SecretNotes
     {
         public static string FolderPath { get; private set; }
 
+        private AuthViewModel _auth;
+
         public App()
         {
+            _auth = AuthViewModel.Instance;
             InitializeComponent();
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
 
@@ -19,12 +23,29 @@ namespace SecretNotes
                 MainPage = new NavigationPage(new NotesPage());
             else
                 MainPage = new NavigationPage(new LoginPage());
+        }
 
+        public async void DetermineStartUp()
+        {
+            bool valid = false;
+
+            if(Current.Properties.ContainsKey("token"))
+            {
+                valid = await _auth.IsTokenValid(
+                Current.Properties["token"].ToString());
+            }
+
+            if (!valid && Current.Properties.ContainsKey("token"))
+            {
+                Current.Properties.Remove("token");
+                MainPage = new NavigationPage(new LoginPage());
+            }
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            DetermineStartUp();
         }
 
         protected override void OnSleep()

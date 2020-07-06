@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SecretNotes.Views.SignUpPage">
+    <StackLayout
+        VerticalOptions="Center"
+        Margin="20">
+        
+        <Label
+            Text="Secret Notes Sign Up!"
+            HorizontalOptions="Center"
+            TextColor="#4682B4"
+            FontSize="35"
+            Margin="0, 20"
+            />
+        
+        <Entry
+            Placeholder="Email"
+            Keyboard="Email"
+            x:Name="EmailInput"
+            />
+        
+        <Entry
+            Placeholder="Password"
+            IsPassword="true"
+            x:Name="PasswordInput"
+            />
+
+        <Label x:Name="passLabel"
+                   HorizontalTextAlignment="Center"
+                   />
+        
+        <Button
+            Text="Sign Up"
+            Clicked="SignUpClicked"
+            Margin="60, 40"
+            BackgroundColor="#4682B4"
+            TextColor="White"
+            />
+        
+    </StackLayout>
+</ContentPage>

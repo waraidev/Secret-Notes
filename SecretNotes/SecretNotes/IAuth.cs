@@ -7,7 +7,11 @@ namespace SecretNotes
     {
         Task<string> LoginWithEmailPassword(string email, string password);
 
+        Task<string> GetTokenID();
+
         bool SignOut();
         bool IsSignedIn();
+
+        Task SignUp(string email, string password);
     }
 }

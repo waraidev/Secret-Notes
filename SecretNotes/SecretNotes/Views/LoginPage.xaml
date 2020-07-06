@@ -3,41 +3,53 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SecretNotes.Views.LoginPage">
-    <StackLayout
-        VerticalOptions="Center"
-        Margin="20">
+    <AbsoluteLayout>
+        <StackLayout
+            AbsoluteLayout.LayoutBounds=".5,.1,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            VerticalOptions="Center"
+            Margin="20">
         
-        <Label
-            Text="Secret Notes Sign-In"
-            HorizontalOptions="Center"
-            TextColor="#4682B4"
-            FontSize="35"
-            Margin="0, 20"
-            />
+            <Label
+                Text="Secret Notes Sign-In"
+                HorizontalOptions="Center"
+                TextColor="#4682B4"
+                FontSize="35"
+                Margin="0, 20"
+                />
         
-        <Entry
-            Placeholder="Email"
-            Keyboard="Email"
-            x:Name="EmailInput"
-            />
-        <Entry
-            Placeholder="Phone Number"
-            Keyboard="Phone"
-            x:Name="PhoneInput" />
+            <Entry
+                Placeholder="Email"
+                Keyboard="Email"
+                x:Name="EmailInput"
+                />
         
-        <Entry
-            Placeholder="Password"
-            IsPassword="true"
-            x:Name="PasswordInput"
-            />
-        
+            <Entry
+                Placeholder="Password"
+                IsPassword="true"
+                x:Name="PasswordInput"
+                />
+  
+            <Button
+                Text="Enter"
+                Clicked="LoginClicked"
+                Margin="60, 40"
+                BackgroundColor="#4682B4"
+                TextColor="White"
+                />
+
+        </StackLayout>
         <Button
-            Text="Enter"
-            Clicked="LoginClicked"
-            Margin="60, 40"
-            BackgroundColor="#4682B4"
-            TextColor="White"
+            AbsoluteLayout.LayoutBounds=".5,.95,.4,.2"
+            AbsoluteLayout.LayoutFlags="All"
+            Text="Sign Up!"
+            TextColor="#4682B4"
+            Clicked="SignUpClicked"
             />
-        
-    </StackLayout>
+
+        <ActivityIndicator x:Name="loadSignUp"
+                           AbsoluteLayout.LayoutBounds=".5,1,.1,.1"
+                           AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+    
 </ContentPage>

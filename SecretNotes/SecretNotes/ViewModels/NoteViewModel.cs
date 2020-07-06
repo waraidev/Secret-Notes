@@ -10,14 +10,22 @@ namespace SecretNotes.ViewModels
 {
     public class NoteViewModel
     {
-        private readonly string ChildName = "notes";
+        private static NoteViewModel _instance;
+
         readonly FirebaseClient client = new
             FirebaseClient("https://secret-notes-9029b.firebaseio.com/");
+
+        public static NoteViewModel Instance
+        {
+            get => _instance ?? new NoteViewModel();
+        }
+
+        public string Email { get; set; }
 
         public async Task<List<Note>> GetAllNotes()
         {
             return (await client
-                .Child(ChildName)
+                .Child(Email)
                 .OnceAsync<Note>()).Select(item => new Note
                 {
                     Text = item.Object.Text,
@@ -36,7 +44,7 @@ namespace SecretNotes.ViewModels
             };
 
             await client
-                .Child(ChildName)
+                .Child(Email)
                 .PostAsync(addedNote);
 
             return addedNote;
@@ -46,7 +54,7 @@ namespace SecretNotes.ViewModels
         {
             var allNotes = await GetAllNotes();
             await client
-                .Child(ChildName)
+                .Child(Email)
                 .OnceAsync<Note>();
             return allNotes.FirstOrDefault(x => x.NoteID == noteID);
         }
@@ -55,7 +63,7 @@ namespace SecretNotes.ViewModels
         {
             var allNotes = await GetAllNotes();
             await client
-                .Child(ChildName)
+                .Child(Email)
                 .OnceAsync<Note>();
             return allNotes.FirstOrDefault(a => a.Text == text);
         }
@@ -63,11 +71,11 @@ namespace SecretNotes.ViewModels
         public async Task UpdateNote(Guid noteID, string text, DateTime date)
         {
             var toUpdateNote = (await client
-                .Child(ChildName)
+                .Child(Email)
                 .OnceAsync<Note>()).FirstOrDefault(a => a.Object.NoteID == noteID);
 
             await client
-                .Child(ChildName)
+                .Child(Email)
                 .Child(toUpdateNote.Key)
                 .PutAsync(new Note()
                 {
@@ -80,9 +88,9 @@ namespace SecretNotes.ViewModels
         public async Task DeleteNote(Guid noteID)
         {
             var toDeleteNote = (await client
-                .Child(ChildName)
+                .Child(Email)
                 .OnceAsync<Note>()).FirstOrDefault(a => a.Object.NoteID == noteID);
-            await client.Child(ChildName).Child(toDeleteNote.Key).DeleteAsync();
+            await client.Child(Email).Child(toDeleteNote.Key).DeleteAsync();
         }
     }
 }

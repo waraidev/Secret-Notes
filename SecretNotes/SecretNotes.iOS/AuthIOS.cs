@@ -21,7 +21,12 @@ namespace SecretNotes.iOS
             {
                 return "";
             }
+        }
 
+        public async Task<string> GetTokenID()
+        {
+            var token = await Auth.DefaultInstance.CurrentUser.GetIdTokenAsync();
+            return token;
         }
 
         public bool IsSignedIn()
@@ -41,6 +46,11 @@ namespace SecretNotes.iOS
             {
                 return false;
             }
+        }
+
+        public async Task SignUp(string email, string password)
+        {
+            await Auth.DefaultInstance.CreateUserAsync(email, password);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace SecretNotes.Views
         {
             auth = AuthViewModel.Instance;
             NavigationPage.SetHasBackButton(this, false);
-            noteVM = new NoteViewModel();
+            noteVM = NoteViewModel.Instance;
             InitializeComponent();
         }
 

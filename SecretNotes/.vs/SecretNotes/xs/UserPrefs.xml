@@ -1,28 +1,26 @@
 ﻿<Properties StartupConfiguration="{DD40D94D-FFF5-45DB-91F5-CD9947AD8CC5}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes/Views/LoginPage.xaml">
     <Files>
-      <File FileName="SecretNotes/Views/LoginPage.xaml.cs" Line="42" Column="44" />
-      <File FileName="SecretNotes/Views/NotesPage.xaml.cs" Line="19" Column="43" />
-      <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" Line="1" Column="1" />
-      <File FileName="SecretNotes/Views/NotesPage.xaml" Line="7" Column="30" />
-      <File FileName="SecretNotes/ViewModels/AuthViewModel.cs" Line="18" Column="41" />
-      <File FileName="SecretNotes/Views/NoteEntryPage.xaml.cs" Line="17" Column="59" />
-      <File FileName="SecretNotes/Views/LoginPage.xaml" Line="1" Column="1" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml.cs" Line="36" Column="41" />
+      <File FileName="SecretNotes/Views/NotesPage.xaml" />
+      <File FileName="SecretNotes/Views/LoginPage.xaml" Line="31" Column="19" />
+      <File FileName="SecretNotes/Views/LoginPage.xaml.cs" Line="1" Column="14" />
+      <File FileName="SecretNotes/ViewModels/AuthViewModel.cs" Line="49" Column="33" />
+      <File FileName="SecretNotes/Views/SignUpPage.xaml" Line="32" Column="22" />
+      <File FileName="SecretNotes/Views/SignUpPage.xaml.cs" Line="38" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SecretNotes" expanded="True">
             <Node name="SecretNotes" expanded="True">
+              <Node name="Models" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="LoginPage.xaml" expanded="True" selected="True" />
-                <Node name="NoteEntryPage.xaml" expanded="True" />
-                <Node name="NotesPage.xaml" expanded="True" />
+                <Node name="SignUpPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="SecretNotes.Android" expanded="True" />
             <Node name="SecretNotes.iOS" expanded="True" />
           </Node>
         </State>
@@ -33,11 +31,11 @@
   <DisabledProjects>
     <String>dnd_secrets.Android/dnd_secrets.Android.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.SecretNotes.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.SecretNotes.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008030-000A4D222110802E" />
+  <MonoDevelop.Ide.ItemProperties.SecretNotes.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AF5ED2FB-F6B2-4DEE-8816-FF983C7EBDA5" />
 </Properties>
