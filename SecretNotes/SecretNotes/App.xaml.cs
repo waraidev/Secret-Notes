@@ -2,6 +2,8 @@
 using System.IO;
 using Xamarin.Forms;
 using SecretNotes.Views;
+using SecretNotes.ViewModels;
+using System.Threading.Tasks;
 
 namespace SecretNotes
 {
@@ -9,11 +11,18 @@ namespace SecretNotes
     {
         public static string FolderPath { get; private set; }
 
+        private AuthViewModel _auth;
+
         public App()
         {
+            _auth = AuthViewModel.Instance;
             InitializeComponent();
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
-            MainPage = new NavigationPage(new NotesPage());
+
+            if (Current.Properties.ContainsKey("token"))
+                MainPage = new NavigationPage(new NotesPage());
+            else
+                MainPage = new NavigationPage(new LoginPage(false));
         }
 
         protected override void OnStart()

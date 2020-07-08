@@ -6,27 +6,48 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+"
                      Clicked="OnNoteAddedClicked" />
+        
     </ContentPage.ToolbarItems>
     <AbsoluteLayout>
-        <StackLayout AbsoluteLayout.LayoutBounds="0,0">
-            <ListView x:Name="listView"
-                  Margin="20"
-                  ItemSelected="OnListViewItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Text}"
-                                  Detail="{Binding Date}">
-                            <TextCell.ContextActions>
-                                <MenuItem Clicked="OnDeleteClicked"
-                                          IsDestructive='True'
-                                          CommandParameter="{Binding .}"
-                                          Text="Delete"/>
-                            </TextCell.ContextActions>
-                        </TextCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView> 
-        </StackLayout>
-        <ActivityIndicator x:Name="loading" AbsoluteLayout.LayoutBounds=".5,.5,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+        <ListView x:Name="listView"
+                Margin="20"
+                ItemSelected="OnListViewItemSelected"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Text}"
+                                Detail="{Binding Date}">
+                        <TextCell.ContextActions>
+                            <MenuItem Clicked="OnDeleteClicked"
+                                        IsDestructive='True'
+                                        CommandParameter="{Binding .}"
+                                        Text="Delete"/>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView> 
+        <ActivityIndicator x:Name="loading"
+                           AbsoluteLayout.LayoutBounds=".5,.5,.5,.1"
+                           AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button HorizontalOptions="Center"
+                Text="Change Password"
+                Clicked="OnChangePassClicked"
+                BackgroundColor="#4682B4"
+                TextColor="White"
+                WidthRequest="300"
+                AbsoluteLayout.LayoutBounds=".5,.87,300,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Button HorizontalOptions="Center"
+                Text="Sign Out"
+                Clicked="OnSignoutClicked"
+                BackgroundColor="#4682B4"
+                TextColor="White"
+                WidthRequest="300"
+                AbsoluteLayout.LayoutBounds=".5,.95,300,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
     </AbsoluteLayout>
 </ContentPage>
