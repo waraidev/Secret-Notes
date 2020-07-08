@@ -22,16 +22,14 @@ namespace SecretNotes.Views
             passLabel.Margin = new Thickness(20);
         }
 
-        bool PasswordChecker(string pass)
-        {
-            Regex passRegex = new Regex(@"^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&+=]).*$");
-            Match passMatch = passRegex.Match(pass);
-            return passMatch.Success;
-        }
-
+        /// <summary>
+        /// Handles when the sign up button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         async void SignUpClicked(object sender, EventArgs e)
         {
-            if(PasswordChecker(PasswordInput.Text))
+            if(auth.PasswordChecker(PasswordInput.Text))
             {
                 try
                 {

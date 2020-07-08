@@ -19,6 +19,11 @@ namespace SecretNotes.Views
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles when the save button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             selectedNote = (Note)BindingContext;
@@ -26,12 +31,18 @@ namespace SecretNotes.Views
             await noteVM.UpdateNote(
                 selectedNote.NoteID,
                 selectedNote.Text,
-                selectedNote.Date);
+                selectedNote.Date,
+                noteVM.Email);
             
 
             await Navigation.PopAsync();
         }
 
+        /// <summary>
+        /// Handles when the Delete button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             selectedNote = (Note)BindingContext;

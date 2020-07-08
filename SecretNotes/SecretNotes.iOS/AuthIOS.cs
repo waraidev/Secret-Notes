@@ -10,23 +10,20 @@ namespace SecretNotes.iOS
 {
     public class AuthIOS : IAuth
     {
-        public async Task<string> LoginWithEmailPassword(string email, string password)
+        public async Task<User> LoginWithEmailPassword(string email, string password)
         {
-            try
-            {
-                var user = await Auth.DefaultInstance.SignInWithPasswordAsync(email, password);
-                return await user.User.GetIdTokenAsync();
-            }
-            catch (Exception e)
-            {
-                return "";
-            }
+            var user = await Auth.DefaultInstance.SignInWithPasswordAsync(email, password);
+            return user.User;
         }
 
-        public async Task<string> GetTokenID()
+        public async Task<string> GetToken(User authUser)
         {
-            var token = await Auth.DefaultInstance.CurrentUser.GetIdTokenAsync();
-            return token;
+            return await authUser.GetIdTokenAsync();
+        }
+
+        public async void UpdatePassword(string pass)
+        {
+            await Auth.DefaultInstance.CurrentUser.UpdatePasswordAsync(pass);
         }
 
         public bool IsSignedIn()

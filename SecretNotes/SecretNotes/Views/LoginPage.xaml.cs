@@ -12,39 +12,62 @@ namespace SecretNotes.Views
         readonly AuthViewModel auth;
         readonly NoteViewModel noteVM;
 
-        public LoginPage()
+        private bool alert;
+
+        public LoginPage(bool alert)
         {
             NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
-            auth = AuthViewModel.Instance;
-            noteVM = NoteViewModel.Instance;
+            auth = new AuthViewModel();
+            noteVM = new NoteViewModel();
             InitializeComponent();
+
+            this.alert = alert;
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
             loadSignUp.IsRunning = false;
+
+            if (alert)
+                await DisplayAlert("Token Auth Failed",
+                    "Did you change your password? Your previous login", "Log In");
         }
 
-        
-
+        /// <summary>
+        /// Login button handler.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         async void LoginClicked(object sender, EventArgs e)
         {
+            var email = AuthViewModel.ComputeSha256Hash(EmailInput.Text);
+            var pass = auth.PasswordEncrypt(PasswordInput.Text);
+
             auth.GetAuthToken(EmailInput.Text, PasswordInput.Text);
+
             if (auth.Token != "")
             {
+                Application.Current.Properties.Add("email", EmailInput.Text);
+                Application.Current.Properties.Add("pass", pass);
+
                 var code = await GetVerifyCode();
                 var result = await DisplayPromptAsync("Verification Code", "Enter Below");
 
                 if (code.ToString() == result)
                 {
                     Application.Current.Properties.Add("token", auth.Token);
-                    noteVM.Email = EmailInput.Text;
+                    noteVM.Email = email;
                     await Navigation.PushAsync(new NotesPage());
                 }
                 else
+                {
                     ShowError();
+                    Application.Current.Properties.Remove("email");
+                    Application.Current.Properties.Remove("pass");
+                }
+                    
             }
             else
             {
@@ -52,6 +75,11 @@ namespace SecretNotes.Views
             }
         }
 
+        /// <summary>
+        /// Sign Up Button Handler.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         async void SignUpClicked(object sender, EventArgs e) //Sends user to sign up page
         {
             loadSignUp.IsRunning = true;
@@ -59,6 +87,9 @@ namespace SecretNotes.Views
             loadSignUp.IsRunning = false;
         }
 
+        /// <summary>
+        /// Verification that log in is coming from the app itself.
+        /// </summary>
         async Task<int> GetVerifyCode()
         {
             var randNum = RandomNumber();
@@ -78,6 +109,10 @@ namespace SecretNotes.Views
             return randNum;
         }
 
+        /// <summary>
+        /// Random number generator
+        /// </summary>
+        /// <returns></returns>
         int RandomNumber()
         {
             int min = 10000;
@@ -86,9 +121,12 @@ namespace SecretNotes.Views
             return rand.Next(min, max);
         }
 
+
         async private void ShowError()
         {
-            await DisplayAlert("Authentication Failed", "E-mail or password are incorrect. Try again!", "OK");
+            await DisplayAlert("Authentication Failed",
+                $"E-mail or password are incorrect. Try again!",
+                "OK");
         }
     }
 }

@@ -5,92 +5,150 @@ using System.Threading.Tasks;
 using Firebase.Database;
 using Firebase.Database.Query;
 using SecretNotes.Models;
+using Xamarin.Forms;
 
 namespace SecretNotes.ViewModels
 {
     public class NoteViewModel
     {
+        private readonly string ChildName = "notes";
+
         private static NoteViewModel _instance;
 
-        readonly FirebaseClient client = new
-            FirebaseClient("https://secret-notes-9029b.firebaseio.com/");
+        private readonly AuthViewModel auth;
 
-        public static NoteViewModel Instance
-        {
-            get => _instance ?? new NoteViewModel();
-        }
+        private readonly FirebaseClient client;
 
         public string Email { get; set; }
 
+        public static NoteViewModel Instance
+        {
+            get
+            {
+                _instance ??= new NoteViewModel();
+                return _instance;
+            }
+        }
+
+        public NoteViewModel()
+        {
+            _instance = this;
+            auth = AuthViewModel.Instance;
+            client = new FirebaseClient(
+                "https://secret-notes-9029b.firebaseio.com/",
+                new FirebaseOptions
+                {
+                    AuthTokenAsyncFactory = () => Task.FromResult(auth.Token)
+                }
+            );
+
+            if (Application.Current.Properties.ContainsKey("email"))
+                Email = AuthViewModel.ComputeSha256Hash(
+                    (string)Application.Current.Properties["email"]);
+        }
+
+        /// <summary>
+        /// Gets all notes for the specified user
+        /// </summary>
         public async Task<List<Note>> GetAllNotes()
         {
             return (await client
-                .Child(Email)
-                .OnceAsync<Note>()).Select(item => new Note
+                .Child(ChildName)
+                .OnceAsync<Note>()).Where(item => item.Object.Email == Email)
+                .Select(item => new Note
                 {
                     Text = item.Object.Text,
                     NoteID = item.Object.NoteID,
-                    Date = item.Object.Date
+                    Date = item.Object.Date,
+                    Email = item.Object.Email
                 }).ToList();
         }
 
+        /// <summary>
+        /// Adds a note to Firebase.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="date"></param>
         public async Task<Note> AddNote(string text, DateTime date)
         {
             Note addedNote = new Note()
             {
                 NoteID = Guid.NewGuid(),
                 Text = text,
-                Date = date
+                Date = date,
+                Email = Email //right hand side is from NoteViewModel
             };
 
             await client
-                .Child(Email)
+                .Child(ChildName)
                 .PostAsync(addedNote);
 
             return addedNote;
         }
 
+        /// <summary>
+        /// Gets a note from Firebase.
+        /// </summary>
+        /// <param name="noteID"></param>
         public async Task<Note> GetNote(Guid noteID)
         {
             var allNotes = await GetAllNotes();
             await client
-                .Child(Email)
+                .Child(ChildName)
                 .OnceAsync<Note>();
             return allNotes.FirstOrDefault(x => x.NoteID == noteID);
         }
 
+        /// <summary>
+        /// Gets a note from Firebase.
+        /// </summary>
+        /// <param name="text"></param>
         public async Task<Note> GetNote(string text)
         {
             var allNotes = await GetAllNotes();
             await client
-                .Child(Email)
+                .Child(ChildName)
                 .OnceAsync<Note>();
             return allNotes.FirstOrDefault(a => a.Text == text);
         }
 
-        public async Task UpdateNote(Guid noteID, string text, DateTime date)
+        /// <summary>
+        /// Updates a note already in Firebase.
+        /// </summary>
+        /// <param name="noteID"></param>
+        /// <param name="text"></param>
+        /// <param name="date"></param>
+        /// <param name="email"></param>
+        public async Task UpdateNote(Guid noteID, string text,
+            DateTime date, string email)
         {
             var toUpdateNote = (await client
-                .Child(Email)
+                .Child(ChildName)
                 .OnceAsync<Note>()).FirstOrDefault(a => a.Object.NoteID == noteID);
 
             await client
-                .Child(Email)
+                .Child(ChildName)
                 .Child(toUpdateNote.Key)
                 .PutAsync(new Note()
                 {
                     NoteID = noteID,
                     Text = text,
-                    Date = date
+                    Date = date,
+                    Email = email
                 });
         }
 
+        /// <summary>
+        /// Deletes a note in Firebase.
+        /// </summary>
+        /// <param name="noteID"></param>
         public async Task DeleteNote(Guid noteID)
         {
             var toDeleteNote = (await client
-                .Child(Email)
+                .Child(ChildName)
                 .OnceAsync<Note>()).FirstOrDefault(a => a.Object.NoteID == noteID);
-            await client.Child(Email).Child(toDeleteNote.Key).DeleteAsync();
+
+            await client.Child(ChildName).Child(toDeleteNote.Key).DeleteAsync();
         }
     }
 }

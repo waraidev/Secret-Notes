@@ -22,30 +22,12 @@ namespace SecretNotes
             if (Current.Properties.ContainsKey("token"))
                 MainPage = new NavigationPage(new NotesPage());
             else
-                MainPage = new NavigationPage(new LoginPage());
-        }
-
-        public async void DetermineStartUp()
-        {
-            bool valid = false;
-
-            if(Current.Properties.ContainsKey("token"))
-            {
-                valid = await _auth.IsTokenValid(
-                Current.Properties["token"].ToString());
-            }
-
-            if (!valid && Current.Properties.ContainsKey("token"))
-            {
-                Current.Properties.Remove("token");
-                MainPage = new NavigationPage(new LoginPage());
-            }
+                MainPage = new NavigationPage(new LoginPage(false));
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
-            DetermineStartUp();
         }
 
         protected override void OnSleep()
