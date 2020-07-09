@@ -1,9 +1,7 @@
 ﻿using System;
-using System.IO;
 using Xamarin.Forms;
 using SecretNotes.Models;
 using SecretNotes.ViewModels;
-using System.Threading.Tasks;
 
 namespace SecretNotes.Views
 {

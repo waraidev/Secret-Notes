@@ -180,7 +180,7 @@ namespace SecretNotes.Views
                 Application.Current.Properties.Remove("email");
                 Application.Current.Properties.Remove("pass");
 
-                await Navigation.PushAsync(new LoginPage(false));
+                await Navigation.PushAsync(new LoginPage());
             }
         }
     }

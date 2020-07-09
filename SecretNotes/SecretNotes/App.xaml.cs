@@ -3,7 +3,6 @@ using System.IO;
 using Xamarin.Forms;
 using SecretNotes.Views;
 using SecretNotes.ViewModels;
-using System.Threading.Tasks;
 
 namespace SecretNotes
 {
@@ -22,7 +21,7 @@ namespace SecretNotes
             if (Current.Properties.ContainsKey("token"))
                 MainPage = new NavigationPage(new NotesPage());
             else
-                MainPage = new NavigationPage(new LoginPage(false));
+                MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

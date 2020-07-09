@@ -21,6 +21,10 @@ namespace SecretNotes.ViewModels
 
         public string Email { get; set; }
 
+        /// <summary>
+        /// This uses the Singleton design pattern to
+        /// make sure that all classes use the same instance
+        /// </summary>
         public static NoteViewModel Instance
         {
             get
@@ -43,8 +47,7 @@ namespace SecretNotes.ViewModels
             );
 
             if (Application.Current.Properties.ContainsKey("email"))
-                Email = AuthViewModel.ComputeSha256Hash(
-                    (string)Application.Current.Properties["email"]);
+                Email = (string)Application.Current.Properties["email"];
         }
 
         /// <summary>

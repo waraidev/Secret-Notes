@@ -12,27 +12,19 @@ namespace SecretNotes.Views
         readonly AuthViewModel auth;
         readonly NoteViewModel noteVM;
 
-        private bool alert;
-
-        public LoginPage(bool alert)
+        public LoginPage()
         {
             NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
             auth = new AuthViewModel();
             noteVM = new NoteViewModel();
             InitializeComponent();
-
-            this.alert = alert;
         }
 
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
             loadSignUp.IsRunning = false;
-
-            if (alert)
-                await DisplayAlert("Token Auth Failed",
-                    "Did you change your password? Your previous login", "Log In");
         }
 
         /// <summary>
@@ -49,7 +41,7 @@ namespace SecretNotes.Views
 
             if (auth.Token != "")
             {
-                Application.Current.Properties.Add("email", EmailInput.Text);
+                Application.Current.Properties.Add("email", email);
                 Application.Current.Properties.Add("pass", pass);
 
                 var code = await GetVerifyCode();

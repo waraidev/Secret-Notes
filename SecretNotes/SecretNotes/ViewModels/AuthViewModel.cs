@@ -71,7 +71,6 @@ namespace SecretNotes.ViewModels
             }
 
             _key = str_build.ToString();
-            //Application.Current.Properties.Add("key", _key);
         }
 
         /// <summary>
