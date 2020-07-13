@@ -1,27 +1,26 @@
 ﻿<Properties StartupConfiguration="{DD40D94D-FFF5-45DB-91F5-CD9947AD8CC5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes.iOS/AuthIOS.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecretNotes/Views/NotesPage.xaml.cs">
     <Files>
       <File FileName="SecretNotes/Views/LoginPage.xaml.cs" Line="62" Column="21" />
       <File FileName="SecretNotes/ViewModels/AuthViewModel.cs" Line="25" Column="1" />
       <File FileName="SecretNotes/Views/NotesPage.xaml.cs" Line="126" Column="35" />
       <File FileName="SecretNotes/ViewModels/NoteViewModel.cs" Line="33" Column="34" />
-      <File FileName="SecretNotes/Views/SignUpPage.xaml.cs" Line="1" Column="14" />
-      <File FileName="SecretNotes/Views/NoteEntryPage.xaml.cs" Line="1" Column="14" />
-      <File FileName="SecretNotes/Models/Note.cs" Line="1" Column="1" />
-      <File FileName="SecretNotes/App.xaml.cs" Line="5" Column="30" />
-      <File FileName="SecretNotes/IAuth.cs" Line="1" Column="1" />
-      <File FileName="SecretNotes.iOS/AuthIOS.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SecretNotes" expanded="True">
             <Node name="SecretNotes" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="NoteEntryPage.xaml" expanded="True" />
+                <Node name="NotesPage.xaml" expanded="True">
+                  <Node name="NotesPage.xaml.cs" selected="True" />
+                </Node>
+                <Node name="SignUpPage.xaml" expanded="True" />
+              </Node>
               <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="SecretNotes.iOS" expanded="True">
-              <Node name="AuthIOS.cs" selected="True" />
-            </Node>
+            <Node name="SecretNotes.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
