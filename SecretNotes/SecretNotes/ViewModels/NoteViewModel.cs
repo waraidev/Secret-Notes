@@ -39,7 +39,7 @@ namespace SecretNotes.ViewModels
             _instance = this;
             auth = AuthViewModel.Instance;
             client = new FirebaseClient(
-                "https://secret-notes-9029b.firebaseio.com/",
+                "INSERT FIREBASE LINK",
                 new FirebaseOptions
                 {
                     AuthTokenAsyncFactory = () => Task.FromResult(auth.Token)
